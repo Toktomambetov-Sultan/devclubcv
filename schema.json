@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Health Information System (HIS)",
+        "date": "since January 2023",
+        "description": "\n                        A comprehensive healthcare management system that combines a robust web-based platform \n                        for hospital administrators with a user-friendly mobile application for patients. \n                        The platform enables administrators to efficiently manage patient records, doctor schedules, \n                        treatment plans, and other healthcare services. Meanwhile, \n                        the mobile application empowers patients to track their health conditions, appointments, \n                        lab results, and medications. It also facilitates communication with doctors and provides personalized health insights, \n                        enhancing patient engagement and improving the overall quality of care.\n                        ",
+        "class": "w-full",
+        "footer": "Website, Mobile App"
+    },
+    {
+        "title": "Canteen",
+        "date": "since September 2024",
+        "description": "\n                        The UCA Campus Canteen App is a mobile application designed to modernize and \n                        streamline the campus dining experience at the University of Central Asia's Naryn and Khorog campuses. \n                        The app aims to digitize canteen operations, simplify payment processes, \n                        and improve the overall dining experience for students while providing efficient management tools for canteen administrators.\n                        ",
+        "footer": "Mobile App",
+        "class": "w-2/3"
+    },
+    {
+        "title": "AI price Audit",
+        "date": "was done on Dig Dev hackaton",
+        "description": "\n                        The project is designed to compare the prices of different products. \n                        Prices are compared using AI and data provided by the user.\n                        ",
+        "footer": "Website, Data Science"
+    },
+    {
+        "title": "Cullinarium",
+        "date": "(I don't know)",
+        "description": "\n                        This project is running as start up and already got investments                       \n                        ",
+        "footer": "Mobile App"
+    },
+    {
+        "title": "University Transportation Management System",
+        "date": "(I don't know)",
+        "description": "\n                This is platform for UCA staff for tracking vehicles of campus. \n                Platform is developed to optimize manual work of staff, who are making report of fuel",
+        "footer": "Website, Backend"
+    },
+    {
+        "title": "Face Recognition: Check In - Check out System",
+        "date": "since January 2022",
+        "description": "The system is designed to facilitate entry by utilizing facial recognition technology.",
+        "footer": "Website, Backend, Machine Learning"
+    },
+    {
+        "title": "Crowdfunding Platform",
+        "date": "since January 2023",
+        "description": "People who would like to support projects. Or people who are running community based proejcts",
+        "footer": "Website"
+    },
+    {
+        "title": "Baby Guide",
+        "date": "since June/Jule 2024",
+        "description": "Online courses for parents for taking care of their noddlers",
+        "footer": "Mobile App"
+    },
+    {
+        "title": "Class Attendance Tracker",
+        "date": "I don't know",
+        "description": "\n                    WebApp for tracking the attendance of students. \n                    Professor can set limit of GPS from where students will be able to take attendance. \n                    A mobile app for tacking attendance according to GPS location.  \n                    ",
+        "footer": "Website, Mobile App"
+    }
+]
