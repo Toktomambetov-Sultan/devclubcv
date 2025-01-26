@@ -1,16 +1,34 @@
-import backImage from "assets/licensed-image.jpeg"
+import { Container } from '@/components/ui/container';
+
+import backImage from 'assets/HeroBack.jpg';
+
 const GeneralPurpose = () => {
-    return <div className="h-svh">
+    return (
         <div
-            className="mx-auto max-w-6xl relative z-10 text-white">
-            <h1 className="text-9xl pt-[200px]">
-                Dev Club
-            </h1>
-            <p className="text-3xl pt-10 w-[600px] text-wrap">
-                Community of developers that are sharing expirience with each other
-            </p>
+            id="home"
+            className="h-svh w-full"
+            style={{
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundImage: `url(${backImage})`,
+            }}
+        >
+            <Container variant="fullMobileConstrainedPadded" className="h-full">
+                <div className="max-w-6xl z-10  h-full">
+                    <h1
+                        className="text-8xl pt-[200px] text-white uppercase"
+                        style={{
+                            fontFamily: "'Lexend', sans-serif",
+                        }}
+                    >
+                        Reaching for <br /> the stars <br /> with
+                        <br />
+                        <span className="text-green-600">Innovations</span>
+                    </h1>
+                </div>
+            </Container>
         </div>
-    </div>
-}
+    );
+};
 
 export default GeneralPurpose;

@@ -4,6 +4,10 @@ import { cn } from '@/lib/utils';
 import { db } from 'utils/firebase';
 import { useEffect, useState } from 'react';
 import { ref, onValue } from 'firebase/database';
+import { Carousel } from 'react-responsive-carousel';
+import Card1Img from 'assets/Card1Img.png';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 const Projects = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
@@ -18,27 +22,38 @@ const Projects = () => {
     }, []);
 
     return (
-        <Container variant="fullMobileConstrainedPadded" className="text-white">
-            <h2 className="text-6xl font-bold text-center mb-32">Our projects</h2>
-            <div className="py-10 flex flex-wrap">
+        <div id="projects" className="w-full bg-gray-800  min-h-screen">
+            <Container variant="fullMobileConstrainedPadded" className="text-white ">
+                <h2
+                    className="text-6xl font-bold text-end mb-8 mt-16 mr-8 uppercase"
+                    style={{
+                        fontFamily: "'Lexend', sans-serif",
+                    }}
+                >
+                    Successfull
+                    <br /> projects
+                </h2>
+            </Container>
+            <Carousel>
                 {projects.map((project, index) => (
-                    <div key={index} className={cn('w-1/3 w-min-[350px] p-2', project.class || '')}>
-                        <Card key={index} className={'bg-opacity-[80%] bg-black text-white flex flex-col w-full h-full'}>
-                            <CardHeader>
-                                <CardTitle className="text-2xl">{project.title}</CardTitle>
-                                <CardDescription className="text-md">{project.date}</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p>{project.description}</p>
-                            </CardContent>
-                            <CardFooter className="italic mt-auto">
-                                <p>{project.footer}</p>
-                            </CardFooter>
-                        </Card>
-                    </div>
+                    <Container key={index} variant="fullMobileConstrainedPadded" className="text-white flex items-center justify-center h-full">
+                        <div className="bg-black text-white rounded-2xl shadow-lg p-6 flex flex-col md:flex-row max-w-4xl h-max-[700px]h-[80%]">
+                            <div className="md:w-1/2 flex items-center justify-center p-4">
+                                <img src={project.image} alt="Face Recognition Illustration" className="rounded-lg object-cover w-full h-auto" />
+                            </div>
+                            <div className="md:w-1/2 p-6 flex flex-col">
+                                <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
+                                <p className="text-lg font-semibold mb-2">
+                                    Launching date: <span className="text-yellow-300">{project.date}</span>
+                                </p>
+                                <p className="text-gray-300 leading-relaxed overflow-y-scroll h-[100px]">{project.description}</p>
+                                <p className="mt-auto pt-4">{project.footer}</p>
+                            </div>
+                        </div>
+                    </Container>
                 ))}
-            </div>
-        </Container>
+            </Carousel>
+        </div>
     );
 };
 
