@@ -7,10 +7,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import TechStack from 'pages/TechStack';
 import Footer from 'pages/Footer';
+import backImage from 'assets/HeroBack.jpg';
 
 const App = () => {
     return (
-        <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+        <div className="min-h-screen bg-black flex flex-col items-center justify-center">
             <Header />
             <GeneralPurpose />
             <Projects />
