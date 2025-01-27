@@ -21,6 +21,9 @@ const Header = () => {
                     <a href="#contact" className="text-gray-300 no-underline hover:text-white text-2xl">
                         Contact
                     </a>
+                    <a href="#team" className="text-gray-300 no-underline hover:text-white text-2xl">
+                        Team
+                    </a>
                 </nav>
             </Container>
         </header>

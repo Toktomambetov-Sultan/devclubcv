@@ -34,7 +34,7 @@ const Footer = () => {
                         {data?.links &&
                             Object.keys(data?.links).map((key) => (
                                 <p>
-                                    <a href={data?.links?.[key]} className="hover:text-white">
+                                    <a key={key} href={data?.links?.[key]} className="hover:text-white">
                                         {key}
                                     </a>
                                 </p>
