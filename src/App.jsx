@@ -10,6 +10,7 @@ import Footer from 'pages/Footer';
 import backImage from 'assets/HeroBack.jpg';
 import Team from 'pages/Team';
 import Mission from 'pages/Mission';
+import PhotoCards from 'pages/PhotoCards';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
             <Header />
             <GeneralPurpose />
             <Projects />
+            <PhotoCards />
             <Mission />
             <Team />
             <TechStack />
